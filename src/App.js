@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Cabecalho from './componets/Cabecalho/Cabecalho';
 
 function App() {
   return (
     <div className="App">
+      <Cabecalho />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> .
         </p>
         <a
           className="App-link"
