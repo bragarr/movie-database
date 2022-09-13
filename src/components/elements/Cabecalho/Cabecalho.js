@@ -4,7 +4,12 @@ function Cabecalho (){
     return (
         <header className="cabecalho">
             <img className="imagem" src="/img/reactMovie_logo.png" alt="logo"/>
-            <button className="botao">login</button>
+
+            <ul className="menu">
+                <li><a className="menu__movies">movies</a></li>
+                <li><img className="logo__github" src="img/github.png"/></li>
+                <li><button className="botao">login</button></li>
+            </ul>
         </header>
     )
 }
