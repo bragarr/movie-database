@@ -1,9 +1,16 @@
 .imagem {
-    width: 100px;
+    width: 7%;
     display: flex;
     justify-content: left;
+    padding: 15px;
 }
 
 .cabecalho {
+    display: flex;
     background-color: #1c1c1c;
+    align-items: center;
+}
+
+.titulo__principal {
+    
 }
