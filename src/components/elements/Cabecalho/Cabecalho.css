@@ -2,19 +2,24 @@
     width: 25%;
     display: flex;
     justify-content: left;
-    padding: 0px;
+    padding-left: 50px;
 }
 
 .cabecalho {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     background-color: #1c1c1c;
     align-items: center;
+    padding: 20px;
 }
 
-.titulo__principal {
-    color: white;
-    font-family: monospace;
-    font-size: 50px;
+.botao {
+    border-radius: 5px;
+    padding: 10px 35px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    background: greenyellow;
+    cursor: pointer;
+    font-weight: 700;
 }
 
