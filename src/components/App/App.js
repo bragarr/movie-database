@@ -1,4 +1,4 @@
-import Cabecalho from './componets/Cabecalho/Cabecalho';
+import Cabecalho from '../elements/Cabecalho/Cabecalho';
 
 function App() {
   return (
