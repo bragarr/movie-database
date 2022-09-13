@@ -2,11 +2,12 @@
     width: 25%;
     display: flex;
     justify-content: left;
-    padding: 1px;
+    padding: 0px;
 }
 
 .cabecalho {
     display: flex;
+    justify-content: left;
     background-color: #1c1c1c;
     align-items: center;
 }
@@ -16,3 +17,4 @@
     font-family: monospace;
     font-size: 50px;
 }
+
