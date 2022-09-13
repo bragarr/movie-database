@@ -1,0 +1,9 @@
+.imagem {
+    width: 100px;
+    display: flex;
+    justify-content: left;
+}
+
+.cabecalho {
+    background-color: #1c1c1c;
+}
