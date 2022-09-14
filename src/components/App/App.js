@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <Cabecalho />
     </div>
+    <div>
+      <SearchBar />
+    </div>
 
     <nav>
       <h2>
