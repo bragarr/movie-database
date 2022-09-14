@@ -2,7 +2,6 @@
     width: 18%;
     display: flex;
     justify-content: left;
-    padding-left: 50px;
 }
 
 .cabecalho {
@@ -39,6 +38,11 @@
     padding-right: 25px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.menu__movies:hover {
+    color: greenyellow;
+    cursor: pointer;
 }
 
 
