@@ -1,11 +1,29 @@
-/* .divBusca {
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:300px;
-    height:32px;
+.idBusca {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.txtBusca {
-    
-} */
+.textBusca {
+    float:left;
+    background-color:transparent;
+    padding-left: 9px;
+    font-size: 18px;
+    border-radius: 40px;
+    height: 42px;
+    width: 100%; 
+    border: none;
+    background: rgb(152, 152, 152);
+} 
+
+.btnBusca {
+    border:none;
+    float:left;
+    height: 42px;
+    border-radius: 20px ;
+    width: 490px;
+    font-weight:bold;
+    margin-left: 5px;
+    background: greenyellow;
+  }
