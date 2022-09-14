@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Cabecalho from '../elements/Cabecalho/Cabecalho';
+import Movie from "../Movie/Movie";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         </h2>
         <Link to="/movie/1">Movie</Link>
         <Link to="/search">Search</Link>
-      </nav></>
+      </nav>
+      <Movie />  
+    </>
   );
 }
 
