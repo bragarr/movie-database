@@ -16,7 +16,7 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/movie/1">Movie</Link>
         <Link to="/search">Search</Link>
-      </nav>
+    </nav>
       <Outlet /> 
     </>
   );
