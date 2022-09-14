@@ -21,4 +21,5 @@ const Home = () => {
         <div>Home</div>
         <SearchBar />
         </>
+    )
 }
