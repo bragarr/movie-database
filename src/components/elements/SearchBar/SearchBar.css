@@ -1,8 +1,10 @@
 .idBusca {
     display: flex;
-    margin: 10px;
+    padding: 25px;
+    margin: 0px 0px 0px 0px;
     justify-content: center;
     align-items: center;
+    background: #1c1c1c;
 }
 
 .textBusca {
