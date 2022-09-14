@@ -2,8 +2,9 @@
 
 
 //Consumo de API para Banco de dados de filmes e atores
-const API_URL = "https://api.themoviedb.org/3/movie/550?api_key=";
-const API_KEY = "569ff9eec8d764584edc5a6ab4f72371";
+const API_SEARCH = "https://api.themoviedb.org/3/search/movie/";
+const API_DB = "https://api.themoviedb.org/3/movie/";
+const API_KEY = "api_key=569ff9eec8d764584edc5a6ab4f72371";
 const API_LANG = "&language=pt-BR";
 
 //Consumo de API para imagens de filmes e atores
@@ -23,7 +24,8 @@ const POSTER_SIZE = "w500";
 
 
 export {
-    API_URL,
+    API_SEARCH,
+    API_DB,
     API_KEY,
     API_LANG,
     IMAGEM_URL,

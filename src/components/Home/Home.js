@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import "./Home.css"; 
 
 import {
-    API_URL,
+    API_SEARCH,
     API_KEY,
-    // API_LANG,
-    // IMAGEM_URL,
+    API_LANG,
+    API_DB,
+    IMAGEM_URL,
     // BACKDROPE_SIZE,
     // POSTER_SIZE,
 } from "../config";
@@ -13,8 +14,10 @@ import {
 // import HeroImage from "../elements/HeroImage/HeroImage";
 import SearchBar from "../elements/SearchBar/SearchBar";
 
-const movieURL = API_URL;
+const movieURL = API_DB;
 const apiKey = API_KEY;
+const idiomaApi = API_LANG;
+const imagem = IMAGEM_URL;
 
 const Home = () => {
 
@@ -24,21 +27,20 @@ const Home = () => {
         const res = await fetch(url);
         const data = await res.json();
 
-        console.log(data);
+        setTopMovies(data.results);
     };
 
     useEffect(() => {
+        const topRatedUrl = `${movieURL}top_rated?${apiKey}${idiomaApi}`;
+        getTopRatedMovies(topRatedUrl);
 
-        const topRatedUrl = `${movieURL}top_rated?${apiKey}`
-        
-        console.log(topRatedUrl);
     }, [])
 
     return (
         <div>
-            <h1>Home</h1>
-            <p>Aqui será a lista de filmes</p>
+            {topMovies && topMovies.map((movie) => <p>{movie.title}</p> )}
         </div>
-)}
+    )
+};
 
 export default Home;
