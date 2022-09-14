@@ -3,17 +3,17 @@ import './Cabecalho.css'
 function Cabecalho (){
     return (
         <header className="cabecalho">
-            <img className="imagem" src="/img/reactMovie_logo.png" alt="logo"/>
+            <img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo"/>
 
             <ul className="menu">
                 <li>
                     <a className="menu__movies">movies</a>
                 </li>
                 <li>
-                    <img className="logo__github" src="img/github.png"/>
+                    <img className="menu__github" src="img/github.png"/>
                 </li>
                 <li>
-                    <button type='submit' className="botao">login</button>
+                    <button className="menu__botao" type="submit">login</button>
                 </li>
             </ul>
         </header>
