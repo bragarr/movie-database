@@ -17,8 +17,11 @@
     width: 100%; 
     border: none;
     background: rgb(152, 152, 152);
-    color: white;
-} 
+}
+
+.textBusca:focus {
+    outline: none;
+}
 
 .btnBusca {
     border:none;
