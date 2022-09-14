@@ -7,10 +7,10 @@ function Cabecalho (){
 
             <ul className="menu">
                 <li>
-                    <a className="menu__movies">movies</a>
+                    <a href="#" className="menu__movies">movies</a>
                 </li>
                 <li>
-                    <img className="menu__github" src="img/github.png"/>
+                    <img className="menu__github" src="img/github.png" alt="logo__webpage"/>
                 </li>
                 <li>
                     <button className="menu__botao" type="submit">login</button>
