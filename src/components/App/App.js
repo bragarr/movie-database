@@ -3,15 +3,18 @@ import Cabecalho from '../elements/Cabecalho/Cabecalho';
 
 function App() {
   return (
-    <><div className="App">
+    <>
+    <div className="App">
       <Cabecalho />
-    </div><nav>
-        <h2>
-          <Link to="/">React Movie</Link>
-        </h2>
+    </div>
+
+    <nav>
+      <h2>
+        <Link to="/">React Movie</Link>
+      </h2>
         <Link to="/movie/1">Movie</Link>
         <Link to="/search">Search</Link>
-      </nav></>
+    </nav></>
   );
 }
 
