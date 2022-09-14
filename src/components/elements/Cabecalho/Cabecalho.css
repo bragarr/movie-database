@@ -2,6 +2,7 @@
     width: 18%;
     display: flex;
     justify-content: left;
+    user-select: none;
 }
 
 .cabecalho {
@@ -9,7 +10,7 @@
     justify-content: space-between;
     background-color: #1c1c1c;
     align-items: center;
-    padding: 20px;
+    padding: 20px 80px;
 }
 
 .botao {
@@ -27,6 +28,7 @@
     align-items: center;
     text-decoration: none;
     list-style-type: none;
+    user-select: none;
 }
 
 .logo__github {
