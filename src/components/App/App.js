@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Cabecalho from '../elements/Cabecalho/Cabecalho';
 import Movie from "../Movie/Movie";
+import SearchBar from "../elements/SearchBar/SearchBar";
 
 function App() {
   return (
