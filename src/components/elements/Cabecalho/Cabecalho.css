@@ -1,4 +1,6 @@
-.imagem {
+/*Cabeçalho*/
+
+.cabecalho__imagem {
     width: 18%;
     display: flex;
     justify-content: left;
@@ -13,7 +15,7 @@
     padding: 20px 80px;
 }
 
-.botao {
+.menu__botao {
     border-radius: 5px;
     text-transform: uppercase;
     background: greenyellow;
@@ -31,7 +33,7 @@
     user-select: none;
 }
 
-.logo__github {
+.menu__github {
     width: 50%;
 }
 
