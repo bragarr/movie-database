@@ -11,7 +11,7 @@ import {
 } from "../config";
 
 // import HeroImage from "../elements/HeroImage/HeroImage";
-// import SearchBar from "../elements/SearchBar/SearchBar";
+import SearchBar from "../elements/SearchBar/SearchBar";
 
 const movieURL = API_URL;
 const apiKey = API_KEY;
@@ -37,6 +37,8 @@ const Home = () => {
     return (
         <div>
             <h1>Home</h1>
-            <SearchBar />
+            <p>Aqui será a lista de filmes</p>
         </div>
 )}
+
+export default Home;
