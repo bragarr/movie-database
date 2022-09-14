@@ -1,5 +1,4 @@
-import React from "react";
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Home.css"; 
 
 import {
@@ -18,10 +17,29 @@ const movieURL = API_URL;
 const apiKey = API_KEY;
 
 const Home = () => {
-    console.log(movieURL);
-    console.log(apiKey);
-    return <div>Home</div>
+
+    const [topMovies, setTopMovies] = useState([]);
     
+    const getTopRatedMovies = async (url) => {
+        const res = await fetch(url);
+        const data = await res.json();
+
+        console.log(data);
+    };
+
+    useEffect(() => {
+
+        const topRatedUrl = `${movieURL}top_rated?${apiKey}`
+        
+        console.log(topRatedUrl);
+    }, [])
+
+    return (
+    <div>
+        <h2>Home</h2>
+        <p>Aqui ficara todos os principais filmes</p>
+    </div>
+    )
 }
 
 export default Home;
