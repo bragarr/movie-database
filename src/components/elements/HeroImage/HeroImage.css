@@ -1,3 +1,22 @@
 .texto {
     color:red;
 }
+
+.img__principal {
+    width: 100%;
+}
+
+.hero__titulo {
+    position: absolute;
+    display: flex;
+    bottom: 300px;
+    left: 50px;
+}
+
+.hero__description {
+    position: absolute;
+    display: flex;
+    bottom: 190px;
+    left: 50px;
+    width: 80%;
+}
