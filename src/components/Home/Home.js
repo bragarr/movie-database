@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchBar from "../elements/SearchBar/SearchBar";
 import HeroImage from "../elements/HeroImage/HeroImage";
+import FourColGrid from "../elements/FourColGrid/FourColGrid";
 
 import "./Home.css"; 
 
@@ -13,6 +14,7 @@ import {
     // BACKDROPE_SIZE,
     // POSTER_SIZE,
 } from "../config";
+
 
 const movieURL = API_DB;
 const apiKey = API_KEY;
@@ -28,6 +30,7 @@ const Home = () => {
         const data = await res.json();
 
         setTopMovies(data.results);
+        console.log(data);
     };
 
     useEffect(() => {
@@ -45,7 +48,7 @@ const Home = () => {
             <SearchBar />
         </div>
         <div className="container__movie">
-            {topMovies.length > 0 && topMovies.map((movie) => <p>{movie.title}</p> )}
+            {topMovies.length > 0 && topMovies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
         </div>
         </>
     )
