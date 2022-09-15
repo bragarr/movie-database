@@ -16,4 +16,4 @@ const FourColGrid = ({movie, showlink = true}) => {
     );
 };
 
-export default FourColGrid;
+export default FourColGrid
