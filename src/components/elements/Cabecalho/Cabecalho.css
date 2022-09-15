@@ -1,8 +1,8 @@
 /*Cabeçalho*/
 
 .cabecalho__imagem {
-    min-width: 10%;
-    display: inline-block;
+    width: 250px;
+    display: flex;
     justify-content: left;
     user-select: none;
 }
@@ -31,7 +31,6 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    text-align: center;
     list-style-type: none    
 }
 
