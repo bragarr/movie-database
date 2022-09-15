@@ -20,7 +20,7 @@ const BACKDROPE_SIZE = "w1280";
 
 // Para postes menores
 
-const POSTER_SIZE = "w500";
+const POSTER_SIZE = "w500/";
 
 
 export {
