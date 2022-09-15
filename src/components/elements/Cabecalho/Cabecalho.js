@@ -19,7 +19,6 @@ function Cabecalho (){
             </ul>
             </nav>
         </header>
-
     )
 }
 
