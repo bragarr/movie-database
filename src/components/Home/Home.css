@@ -5,3 +5,7 @@
     justify-content: space-between
 }
 
+.container__movie div {
+    margin: 20px;
+    display: flex;
+}
