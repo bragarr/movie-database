@@ -9,3 +9,7 @@
     margin: 20px;
     display: flex;
 }
+
+.container__movie div:hover {
+  transform: scale(1.1);
+}
