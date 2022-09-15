@@ -1,15 +1,16 @@
 .container__movie {
     display: flex;
+    margin: 20px;
     flex-wrap: wrap;
-    margin: 20px 20px;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .container__movie div {
-    margin: 20px;
+    margin: 20px 20px;
     display: flex;
 }
 
 .container__movie div:hover {
   transform: scale(1.1);
 }
+
