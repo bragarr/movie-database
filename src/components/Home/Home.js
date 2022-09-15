@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import SearchBar from "../elements/SearchBar/SearchBar";
+import HeroImage from "../elements/HeroImage/HeroImage";
+
 import "./Home.css"; 
 
 import {
@@ -10,9 +13,6 @@ import {
     // BACKDROPE_SIZE,
     // POSTER_SIZE,
 } from "../config";
-
-// import HeroImage from "../elements/HeroImage/HeroImage";
-import SearchBar from "../elements/SearchBar/SearchBar";
 
 const movieURL = API_DB;
 const apiKey = API_KEY;
@@ -37,9 +37,17 @@ const Home = () => {
     }, [])
 
     return (
+        <>
         <div>
-            {topMovies && topMovies.map((movie) => <p>{movie.title}</p> )}
+            <HeroImage />
         </div>
+        <div>
+            <SearchBar />
+        </div>
+        <div className="container__movie">
+            {topMovies.length > 0 && topMovies.map((movie) => <p>{movie.title}</p> )}
+        </div>
+        </>
     )
 };
 
