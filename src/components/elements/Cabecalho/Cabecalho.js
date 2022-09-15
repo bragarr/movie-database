@@ -5,7 +5,8 @@ function Cabecalho (){
         <header className="cabecalho">
             <img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo"/>
 
-            <ul className="menu">
+            <nav className="menu">
+            <ul>
                 <li>
                     <a href="/home" className="menu__movies">movies</a>
                 </li>
@@ -16,6 +17,7 @@ function Cabecalho (){
                     <button className="menu__botao" type="submit">login</button>
                 </li>
             </ul>
+            </nav>
         </header>
 
     )
