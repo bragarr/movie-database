@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import SearchBar from "../elements/SearchBar/SearchBar";
-import HeroImage from "../elements/HeroImage/HeroImage";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
 
 import "./Home.css"; 
@@ -40,17 +38,9 @@ const Home = () => {
     }, [])
 
     return (
-        <>
-        <div>
-            <HeroImage />
-        </div>
-        <div>
-            <SearchBar />
-        </div>
         <div className="container__movie">
             {topMovies.length > 0 && topMovies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
         </div>
-        </>
     )
 };
 

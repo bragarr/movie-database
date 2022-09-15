@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import Cabecalho from '../elements/Cabecalho/Cabecalho';
+import SearchBar from "../elements/SearchBar/SearchBar"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <Cabecalho />
       </div>
       <div>
+      <SearchBar />
       </div>
       <nav>
           <Link to="/"></Link>
