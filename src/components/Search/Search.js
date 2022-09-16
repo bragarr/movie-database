@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import { useSearchParams } from "react-router-dom";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
-
+import "../Search/Search.css"
 import "../elements/FourColGrid/FourColGrid.css"
 
 import {
@@ -41,10 +41,20 @@ const Search = () => {
     }, [])
 
     return (
-        <div className="container__movie">
-            <h2>Resultados: <span className="seacrh__text">{query}</span></h2>
+        <div>
+            <div>
+                <h2 className="h2">Resultados:
+                <span 
+                className="seacrh__text">{query}
+                </span>
+                </h2>
+            </div>
+            <div className="container__movie">
             {movies.length > 0 && movies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
+            </div>
+            
         </div>
+        
     )
 };
 

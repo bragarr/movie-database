@@ -2,7 +2,8 @@
     display: flex;
     margin: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 
 .container__movie div {
