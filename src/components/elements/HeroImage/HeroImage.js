@@ -55,7 +55,8 @@ const HeroImage = () => {
     >
         <div className="conteudo_div--image">
             <div className="text__presantation">
-                <h1 className="hero__titulo">{resultMovie.title}</h1>
+                <h2 className="destaque">Em Destaque</h2>
+                <p className="hero__titulo">{resultMovie.title}</p>
                 <p className="hero__description">{resultMovie.overview}</p>
             </div>
         </div>

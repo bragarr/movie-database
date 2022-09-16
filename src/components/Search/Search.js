@@ -44,9 +44,9 @@ const Search = () => {
     return (
         <div>
             <div>
-                <h2 className="h2">Resultados:
-                <span 
-                className="seacrh__text">{query}
+                <h2 className="titulo__busca">Resultados:
+                <span className="seacrh__text">
+                    {query}
                 </span>
                 </h2>
             </div>
