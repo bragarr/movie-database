@@ -4,20 +4,15 @@ import FourColGrid from "../elements/FourColGrid/FourColGrid";
 import "./Home.css"; 
 
 import {
-    API_SEARCH,
     API_KEY,
     API_LANG,
     API_DB,
-    IMAGEM_URL,
-    // BACKDROPE_SIZE,
-    // POSTER_SIZE,
 } from "../config";
 
 
 const movieURL = API_DB;
 const apiKey = API_KEY;
 const idiomaApi = API_LANG;
-const imagem = IMAGEM_URL;
 
 const Home = () => {
 
