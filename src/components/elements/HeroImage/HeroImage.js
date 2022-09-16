@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import './HeroImage.css'
 
 import {
     API_DB,

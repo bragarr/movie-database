@@ -7,10 +7,23 @@
     animation: animateHeroimage 1s;
 }
 
-.conteudo_div--image {
-
+.text__presantation {
+    position: absolute;
+    color: aliceblue;
+    top: 100px;
+    width: 80%;
+    padding-left: 20px;
 }
 
-.text__presantation {
-    color: aliceblue;
+.hero__titulo {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+}
+
+.hero__description {
+    position: absolute;
+    width: 100%;
+    top: 80px;
 }
