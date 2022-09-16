@@ -1,15 +1,14 @@
 import {useEffect, useState} from "react";
 import { useSearchParams } from "react-router-dom";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
+import SearchBar from "../elements/SearchBar/SearchBar";
 import "../Search/Search.css"
 import "../elements/FourColGrid/FourColGrid.css"
 
 import {
     API_SEARCH,
     API_KEY,
-    API_LANG,
-    IMAGEM_URL,
-    POSTER_SIZE,
+    API_LANG
 } from "../config";
 
 const apiSearch = API_SEARCH;
@@ -38,11 +37,13 @@ const Search = () => {
         const moviesSearchUrl = `${apiSearch}?${apiKey}&query=${query}${idimodaUrl}`;
         getMovies(moviesSearchUrl);
         console.log(moviesSearchUrl)
-
-    }, [])
+    }, [query])
 
     return (
         <div>
+            <article>
+                <SearchBar />
+            </article>
             <div>
                 <h2 className="titulo__busca">Resultados:
                 <span className="seacrh__text">
@@ -51,7 +52,7 @@ const Search = () => {
                 </h2>
             </div>
             <div className="container__movie">
-            {movies.length > 0 && movies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
+                {movies.length > 0 && movies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
             </div>
             
         </div>
