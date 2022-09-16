@@ -14,6 +14,7 @@ import {
 
 const apiSearch = API_SEARCH;
 const apiKey = API_KEY;
+const idimodaUrl = API_LANG;
 
 
 const Search = () => {
@@ -34,7 +35,7 @@ const Search = () => {
     };
 
     useEffect(() => {
-        const moviesSearchUrl = `${apiSearch}?${apiKey}&query=${query}`;
+        const moviesSearchUrl = `${apiSearch}?${apiKey}&query=${query}${idimodaUrl}`;
         getMovies(moviesSearchUrl);
         console.log(moviesSearchUrl)
 

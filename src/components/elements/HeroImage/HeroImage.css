@@ -1,22 +1,16 @@
-.texto {
-    color:red;
-}
-
-.img__principal {
+.hero__background {
+    background-size: 100%, cover !important;
+    background-position: center, center !important;
     width: 100%;
+    height: 600px;
+    position: relative;
+    animation: animateHeroimage 1s;
 }
 
-.hero__titulo {
-    position: absolute;
-    display: flex;
-    bottom: 300px;
-    left: 50px;
+.conteudo_div--image {
+
 }
 
-.hero__description {
-    position: absolute;
-    display: flex;
-    bottom: 190px;
-    left: 50px;
-    width: 80%;
+.text__presantation {
+    color: aliceblue;
 }

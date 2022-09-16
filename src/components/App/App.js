@@ -1,12 +1,16 @@
 import { Link, Outlet } from "react-router-dom";
 import Cabecalho from '../elements/Cabecalho/Cabecalho';
-import SearchBar from "../elements/SearchBar/SearchBar"
+import HeroImage from "../elements/HeroImage/HeroImage";
+import SearchBar from "../elements/SearchBar/SearchBar";
 
 function App() {
   return (
     <>
       <div className="App">
         <Cabecalho />
+      </div>
+      <div>
+        <HeroImage />
       </div>
       <div>
       <SearchBar />

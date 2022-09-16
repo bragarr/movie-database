@@ -5,7 +5,8 @@ function Cabecalho() {
     return (
         <header className="cabecalho">
 
-        <Link to={"/"}><img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo" />
+        <Link to={"/"}>
+            <img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo" />
         </Link>
         
         

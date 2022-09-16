@@ -1,23 +1,63 @@
 import React from "react";
-import "./HeroImage.css";
+import { useEffect, useState } from "react";
+
 import {
+    API_DB,
+    API_KEY,
+    API_LANG,
     IMAGEM_URL,
     BACKDROPE_SIZE,
 } from "../../config";
 
+import "./HeroImage.css";
+
+const apiUrl = API_DB;
+const apiKey = API_KEY;
+const idiomaApi = API_LANG;
 const imagemUrl = IMAGEM_URL;
+const tamanhoImagem = BACKDROPE_SIZE;
+let resultMovie = "";
+let filmeAleatorio = Math.floor(Math.random()*20);
 
+console.log(filmeAleatorio);
 
-const HeroImage = (movie) => {
+const HeroImage = () => {
+
+    const [latest, setLatestMovie] = useState([]);
+    
+    const getLatestMovie = async (url) => {
+        const res = await fetch(url);
+        const data = await res.json();
+
+        setLatestMovie(data.results);
+        console.log(data.results[0]);
+        resultMovie = data.results[filmeAleatorio];
+        console.log(data.results);
+    };
+
+    useEffect(() => {
+        const lastestMovieUrl = `${apiUrl}now_playing?${apiKey}${idiomaApi}`;
+        getLatestMovie(lastestMovieUrl);
+        console.log(lastestMovieUrl)
+
+    }, [])
+
     return (
     <div 
         className="hero__background"
-        style={{background: `url${imagemUrl}${BACKDROPE_SIZE}${movie.backdrop_path}`}}
-
-    >   
-        <img className="img__principal" src="./img/page.jpg"/>
-        <h1 className="hero__titulo">Fall</h1>
-        <p className="hero__description">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        style={{
+            background: `linear-gradient(to bottom, rgba(0,0,0,0)
+          39%, rgba(0,0,0,0)
+          41%, rgba(0,0,0,0.65)
+          100%), url('${imagemUrl}${tamanhoImagem}${resultMovie.backdrop_path}'), #1c1c1c`
+          }}
+    >
+        <div className="conteudo_div--image">
+            <div className="text__presantation">
+                <h1 className="hero__titulo">{resultMovie.title}</h1>
+                <p className="hero__description">{resultMovie.overview}</p>
+            </div>
+        </div>
     </div>
 
     )

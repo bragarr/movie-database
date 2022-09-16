@@ -7,6 +7,7 @@ const API_DB = "https://api.themoviedb.org/3/movie/";
 const API_KEY = "api_key=569ff9eec8d764584edc5a6ab4f72371";
 const API_LANG = "&language=pt-BR";
 
+
 //Consumo de API para imagens de filmes e atores
 
 const IMAGEM_URL = "https://image.tmdb.org/t/p/";
