@@ -37,7 +37,7 @@ const HeroImage = () => {
     };
 
     useEffect(() => {
-        const lastestMovieUrl = `${apiUrl}now_playing?${apiKey}${idiomaApi}`;
+        const lastestMovieUrl = `${apiUrl}popular?${apiKey}${idiomaApi}`;
         getLatestMovie(lastestMovieUrl);
         console.log(lastestMovieUrl)
 
@@ -53,8 +53,9 @@ const HeroImage = () => {
           100%), url('${imagemUrl}${tamanhoImagem}${resultMovie.backdrop_path}'), #1c1c1c`
           }}
     >
-        <h2 className="destaque">Em Destaque</h2>
-
+        <div className="section__destaque">
+            <h2 className="destaque">Em Destaque</h2>
+        </div>
         <div className="conteudo_div--image">
             <div className="text__presantation">
                 <p className="hero__titulo">{resultMovie.title}</p>

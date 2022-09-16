@@ -27,14 +27,17 @@ const Home = () => {
     };
 
     useEffect(() => {
-        const topRatedUrl = `${movieURL}top_rated?${apiKey}${idiomaApi}`;
+        const topRatedUrl = `${movieURL}popular?${apiKey}${idiomaApi}`;
         getTopRatedMovies(topRatedUrl);
 
     }, [])
 
     return (
-        <div className="container__movie">
-            {topMovies.length > 0 && topMovies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
+        <div>
+            <h3 className="titulo__section">Filmes Populares</h3>
+            <section className="container__movie">
+                {topMovies.length > 0 && topMovies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
+            </section>
         </div>
     )
 };

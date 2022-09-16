@@ -1,17 +1,13 @@
+.titulo__section {
+    margin: 20px 0 0 70px;
+    font-size: 40px;
+}
+
 .container__movie {
     display: flex;
-    margin: 20px;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-}
-
-.container__movie div {
-    margin: 20px 20px;
-    display: flex;
-}
-
-.container__movie div:hover {
-  transform: scale(1.1);
+    justify-content: space-evenly;
+    margin: 50px 10px;
+    padding: 0;
 }
 

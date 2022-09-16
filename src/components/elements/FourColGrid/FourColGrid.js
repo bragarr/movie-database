@@ -11,7 +11,7 @@ const tamanhoPoster = POSTER_SIZE;
 const FourColGrid = ({movie, showlink = true}) => {
     return (
         <div >
-            {showlink && <Link to={`/movie/${movie.id}`}><img src={imagemUrl + tamanhoPoster + movie.poster_path} alt={movie.title} className="conatiner"/></Link>}
+            {showlink && <Link to={`/movie/${movie.id}`}><img src={imagemUrl + tamanhoPoster + movie.poster_path} alt={movie.title} className="poster__movie"/></Link>}
         </div>
     );
 };
