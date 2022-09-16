@@ -20,27 +20,21 @@ const tamanhoImagem = BACKDROPE_SIZE;
 let resultMovie = "";
 let filmeAleatorio = Math.floor(Math.random()*20);
 
-console.log(filmeAleatorio);
-
 const HeroImage = () => {
 
-    const [latest, setLatestMovie] = useState([]);
+    const [,setLatestMovie] = useState([]);
     
     const getLatestMovie = async (url) => {
         const res = await fetch(url);
         const data = await res.json();
 
         setLatestMovie(data.results);
-        console.log(data.results[0]);
         resultMovie = data.results[filmeAleatorio];
-        console.log(data.results);
     };
 
     useEffect(() => {
         const lastestMovieUrl = `${apiUrl}popular?${apiKey}${idiomaApi}`;
         getLatestMovie(lastestMovieUrl);
-        console.log(lastestMovieUrl)
-
     }, [])
 
     return (
@@ -66,6 +60,4 @@ const HeroImage = () => {
 
     )
 }
-
-
 export default HeroImage;
