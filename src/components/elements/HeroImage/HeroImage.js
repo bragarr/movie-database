@@ -53,9 +53,10 @@ const HeroImage = () => {
           100%), url('${imagemUrl}${tamanhoImagem}${resultMovie.backdrop_path}'), #1c1c1c`
           }}
     >
+        <h2 className="destaque">Em Destaque</h2>
+
         <div className="conteudo_div--image">
             <div className="text__presantation">
-                <h2 className="destaque">Em Destaque</h2>
                 <p className="hero__titulo">{resultMovie.title}</p>
                 <p className="hero__description">{resultMovie.overview}</p>
             </div>

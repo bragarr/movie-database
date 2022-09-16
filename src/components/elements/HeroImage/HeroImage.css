@@ -1,33 +1,38 @@
 .hero__background {
     background-size: 100%, cover !important;
-    background-position: center, center !important;
     width: 100%;
     height: 600px;
     position: relative;
     animation: animateHeroimage 1s;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: flex-end;
 }
 
 .conteudo_div--image {
+    position: relative;
     padding: 10px 0;
     background-color: black;
     opacity: 0.5;
     margin: 0;
+    height: 220px;
+    bottom: 30px;
 }
 
 .text__presantation {
-    color: aliceblue;
     width: 80%;
     padding-left: 20px;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .destaque {
+    position: relative;
+    top: 100px;
     font-size: 50px;
+    color: greenyellow;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .hero__titulo {
@@ -43,4 +48,5 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    color: white;
 }
