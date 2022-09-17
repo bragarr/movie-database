@@ -1,16 +1,13 @@
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useState} from "react";
 
 import "./LoadMoreBtn.css";
 
 const LoadMoreBtn = () => {
 
-    const [load, setLoad] = useState("");
-    const navigate = useNavigate();
-    
+    const [load, setLoad] = useState([]);
+
     const stopSubmit = (e) => {
         e.preventDefault();
-       
     };
 
     return (

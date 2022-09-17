@@ -4,7 +4,6 @@ import FourColGrid from "../elements/FourColGrid/FourColGrid";
 import SearchBar from "../elements/SearchBar/SearchBar";
 import "../Search/Search.css"
 import "../elements/FourColGrid/FourColGrid.css"
-
 import {
     API_SEARCH,
     API_KEY,
@@ -15,15 +14,10 @@ const apiSearch = API_SEARCH;
 const apiKey = API_KEY;
 const idimodaUrl = API_LANG;
 
-
 const Search = () => {
-
     const [searchParams] = useSearchParams();
-
     const [movies, setMovies] = useState([]);
-
     const query = searchParams.get("q");
-    console.log(query);
 
     const getMovies = async (url) => {
         const res = await fetch(url);
@@ -53,10 +47,8 @@ const Search = () => {
             </div>
             <div className="container__movie">
                 {movies.length > 0 && movies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
-            </div>
-            
+            </div> 
         </div>
-        
     )
 };
 

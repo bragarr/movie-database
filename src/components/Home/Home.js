@@ -35,7 +35,7 @@ const Home = () => {
         const topRatedUrl = `${movieURL}popular?${apiKey}${idiomaApi}&page=${aleatorio}`;
         getTopRatedMovies(topRatedUrl);
        
-    }, [])
+    },[])
 
     return (
         <div>

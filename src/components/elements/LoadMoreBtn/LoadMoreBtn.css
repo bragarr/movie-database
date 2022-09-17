@@ -11,6 +11,7 @@
     border: none;
     cursor: pointer;
     user-select: none;
+    width: 90%;
 }
 
 .botao_filmes:hover {
