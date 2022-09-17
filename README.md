@@ -11,6 +11,9 @@ Challanges
 Os principais challanges desse projeto:
 
 *Desenvolver primeiro projeto com React.js*
+
 *Desenvolver trabalho em equipe*
+
 *Explorar funcionalidade do GitHub para trabalhos cooperativos*
+
 *Desenvolver e explorar todas as etapas de um projeto*
