@@ -3,6 +3,12 @@
     height: 90%;
 }
 
+@media screen and (max-width:560px) {
+    .poster__movie {
+        width: 100%;
+    }
+}
+
 /* .poster__movie:hover {
     transform: scale(1.1);
 } */

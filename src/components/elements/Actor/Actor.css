@@ -1,3 +1,12 @@
+.titulo__elenco {
+    font-size: 40px;
+    margin: 0;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
 .cast_list {
     list-style-type: none;
     display: grid;
@@ -21,7 +30,8 @@
 
 .actors_name {
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .name {

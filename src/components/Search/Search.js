@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import { useSearchParams } from "react-router-dom";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
 import SearchBar from "../elements/SearchBar/SearchBar";
+import Spinner from "../elements/Spinner/Spinner";
 import "../Search/Search.css"
 import "../elements/FourColGrid/FourColGrid.css"
 import {
@@ -9,6 +10,7 @@ import {
     API_KEY,
     API_LANG
 } from "../config";
+
 
 const apiSearch = API_SEARCH;
 const apiKey = API_KEY;
@@ -46,6 +48,7 @@ const Search = () => {
                 </h2>
             </div>
             <div className="container__movie">
+                {movies.length === 0 && <p><Spinner /></p>}
                 {movies.length > 0 && movies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
             </div> 
         </div>

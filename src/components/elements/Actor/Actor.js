@@ -40,7 +40,7 @@ const Actor = () => {
 
     return (
         <article>
-            <h2>Elenco</h2>
+            <h2 className="titulo__elenco">Elenco</h2>
             <ul className="cast_list">    
                 {credit && credit.map((credits) => {
                     if(credits.profile_path != null) {

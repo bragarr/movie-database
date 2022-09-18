@@ -29,6 +29,10 @@
     height: 600px;
 }
 
+.titulo__filme {
+    font-size: 40px;
+}
+
 .genres {
     list-style-type:none;
     padding: 0;

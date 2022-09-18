@@ -30,8 +30,8 @@ const MovieInfo = ({movie}) => {
                 <img src={imagemUrl + tamanhoPoster + movie.poster_path} alt={movie.title} className="movie__poster"/>
             </figure>
             <article className="container">
-                <h2>{movie.title}</h2>
-                <h3>Título Original: {movie.original_title}</h3>
+                <h2 className="titulo__filme">{movie.title}</h2>
+                <h3 className="titulo__original">Título Original: {movie.original_title}</h3>
                 <h4>Sinopse</h4>
                 <p>{movie.overview}</p>
                 <p>Avaliação: {Number(movie.vote_average).toFixed(1)}</p>

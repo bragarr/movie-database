@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import MovieInfo from "../elements/MovieInfo/MovieInfo"
 import Navigation from "../elements/Navigation/Navigation";
 import Actor from "../elements/Actor/Actor";
+import Spinner from "../elements/Spinner/Spinner";
 
 import {
     API_DB,
@@ -37,6 +38,7 @@ const Movie = () => {
 
     return(
         <div>
+            {!movie && <p><Spinner /></p>}
             {movie && <Navigation movie={movie}/>}
             {movie && <><MovieInfo movie={movie} /></>}
             {movie && <Actor />}
