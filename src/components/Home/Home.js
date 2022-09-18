@@ -16,7 +16,7 @@ import {
 const movieURL = API_DB;
 const apiKey = API_KEY;
 const idiomaApi = API_LANG;
-let aleatorio = 10;
+let aleatorio = 2;
 
 const Home = () => {
 

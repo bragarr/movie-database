@@ -1,18 +1,32 @@
 .container__movieInfo {
+    background-size: 100%, cover !important;
+    width: auto;
+    height: 600px;
+    position: relative;
+    animation: animateHeroimage 5s;
+    padding: 50px 100px;
+    color: white;
     display: flex;
+    align-items: center;
 }
 
 .bloco__movie {
     padding: 0;
     margin: 0;
+    width: 400px;
+    height: 600px;
 }
 
 .movie__poster {
-    height: 100%;
+    width: 400px;
+    height: 600px;
 }
 
 .container {
-    background-color: #00000042; 
+    background-color: #00000093;
+    padding: 0 30px;
+    width: 90%;
+    height: 600px;
 }
 
 .genres {

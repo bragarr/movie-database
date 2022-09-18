@@ -1,0 +1,41 @@
+.cast_list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.list_actors {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+    background-color: black;
+    color: white;
+}
+
+.poster__actor {
+    width: 154px;
+    height: 220px;
+}
+
+.actors_name {
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.name {
+    word-break: normal;
+}
+
+@media screen and (max-width:1800px) {
+    .cast_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .cast_list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
