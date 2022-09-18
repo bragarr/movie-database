@@ -1,18 +1,27 @@
 .container__movieInfo {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.26); 
-    flex-wrap: wrap;
 }
 
 .bloco__movie {
-    display: flex;
-    position: relative;
-    text-align: center;
-    margin: 16px 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.movie__poster {
+    height: 100%;
 }
 
 .container {
-    width: 100%;
-    margin: 16px 40px;
+    background-color: #00000042; 
+}
+
+.genres {
+    list-style-type:none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.list_genres {
+    padding-right: 20px;
 }

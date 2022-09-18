@@ -20,7 +20,7 @@ const MovieInfo = ({movie}) => {
     return (
         <div className="container__movieInfo">
             <figure className="bloco__movie">
-                <img src={imagemUrl + tamanhoPoster + movie.poster_path} alt={movie.title}/>
+                <img src={imagemUrl + tamanhoPoster + movie.poster_path} alt={movie.title} className="movie__poster"/>
             </figure>
             <article className="container">
                 <h2>{movie.title}</h2>
@@ -31,10 +31,10 @@ const MovieInfo = ({movie}) => {
                 <p>Data de Lançamento: {movie.release_date}</p>
                 <p>Orçamento: ${Number(movie.budget)}</p>
                 <p>Receita: ${Number(movie.revenue)}</p>
-                <ul>
-                    <li>{arrayGeneros[0]}</li>
-                    <li>{arrayGeneros[1]}</li>
-                    <li>{arrayGeneros[2]}</li>   
+                <ul className="genres">
+                    <li className="list_genres">{arrayGeneros[0]}</li>
+                    <li className="list_genres">{arrayGeneros[1]}</li>
+                    <li className="list_genres">{arrayGeneros[2]}</li>   
                 </ul>
             </article>
         </div>
