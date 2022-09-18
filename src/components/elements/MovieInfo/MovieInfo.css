@@ -1,12 +1,17 @@
 .container__movieInfo {
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.26);
-    
+    background-color: rgba(0, 0, 0, 0.26); 
+    flex-wrap: wrap;
 }
 
 .bloco__movie {
+    display: flex;
+    position: relative;
     margin: 0;
     padding: 0;
-    width: 100%;
+}
+
+.container {
+    width: 50%;
 }

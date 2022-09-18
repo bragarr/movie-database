@@ -22,7 +22,7 @@ const MovieInfo = ({movie}) => {
             <figure className="bloco__movie">
                 <img src={imagemUrl + tamanhoPoster + movie.poster_path} alt={movie.title}/>
             </figure>
-            <article>
+            <article className="container">
                 <h2>{movie.title}</h2>
                 <h3>Título Original {movie.original_title}</h3>
                 <p>{movie.overview}</p>
