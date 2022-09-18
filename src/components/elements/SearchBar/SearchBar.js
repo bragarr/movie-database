@@ -17,11 +17,6 @@ const SearchBar = () => {
 
     return ( 
         <form className="idBusca" onSubmit={handleSubmit}>
-
-            <figure className='lupa'>
-                <img 
-                src='../../../../img/lupa.png' alt='imagem lupa'/>
-            </figure>
             <input 
                 type="text" className="textBusca" 
                 placeholder="Busque um filme aqui..." 

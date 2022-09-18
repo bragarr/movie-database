@@ -8,16 +8,19 @@
 }
 
 .textBusca {
-    float:left;
     background-color:transparent;
-    padding-left: 9px;
     font-size: 18px;
-    border-radius: 0px 40px 40px 0px;
+    border-radius: 40px 40px 40px 40px;
     height: 42px;
     width: 100%; 
     border: none;
     background: rgb(152, 152, 152);
     color: white;
+    background-image: url(../../../../public/img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: left;
+    padding: 0 40px;
 }
 
 .textBusca:focus {
@@ -43,4 +46,31 @@
     padding: 4px;
     border-radius: 40px 0px 0px 40px;
     padding-left: 12px;
+}
+
+@media screen and (max-width:780px) {
+    .idBusca {
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+
+    .textBusca {
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .btnBusca {
+        margin-top: 5px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .textBusca::placeholder {
+        font-size: 15px;
+    }
+
 }

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import "./FourColGrid.css"
+
 import {
     IMAGEM_URL,
     POSTER_SIZE,

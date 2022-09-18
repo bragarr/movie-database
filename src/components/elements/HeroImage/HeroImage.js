@@ -10,8 +10,6 @@ import {
     BACKDROPE_SIZE,
 } from "../../config";
 
-import "./HeroImage.css";
-
 const apiUrl = API_DB;
 const apiKey = API_KEY;
 const idiomaApi = API_LANG;
@@ -48,7 +46,7 @@ const HeroImage = () => {
           }}
     >
         <div className="section__destaque">
-            <h2 className="destaque">Em Destaque</h2>
+            <h2 className="destaque">Em Alta</h2>
         </div>
         <div className="conteudo_div--image">
             <div className="text__presantation">

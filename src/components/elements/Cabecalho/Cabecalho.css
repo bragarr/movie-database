@@ -50,4 +50,14 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:580px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .list__nav {
+        padding: 0;
+    }
+}
+
 

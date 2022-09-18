@@ -11,12 +11,12 @@ function Cabecalho() {
         
         
         <nav className="menu">
-                <ul>
+                <ul className="list__nav">
                     <li>
                         <a href="/home" className="menu__movies">movies</a>
                     </li>
                     <li>
-                        <img className="menu__github" src="img/github.png" alt="logo__webpage" />
+                        <img className="menu__github" src="/img/github.png" alt="logo GitHub" />
                     </li>
                     <li>
                         <button className="menu__botao" type="submit">login</button>

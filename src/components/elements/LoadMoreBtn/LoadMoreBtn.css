@@ -18,3 +18,27 @@
     background-color: #649501f1;
     transition: 0.5s;
 }
+
+@media screen and (max-width:780px) {
+    .botao_filmes {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .botao_filmes {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .botao_filmes {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .botao_filmes {
+        font-size: 12px;
+    }
+}

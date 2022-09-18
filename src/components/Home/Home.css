@@ -11,3 +11,28 @@
     padding: 0;
 }
 
+@media screen and (max-width:780px) {
+    .titulo__section {
+        text-align: center;
+        font-size: 35px;
+        margin: 20px 0 0 0px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .titulo__section {
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0 0 0px;
+    }
+
+    .container__movie {
+        margin: 30px 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .titulo__section {
+        font-size: 20px;
+    }
+}
