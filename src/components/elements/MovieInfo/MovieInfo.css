@@ -8,10 +8,11 @@
 .bloco__movie {
     display: flex;
     position: relative;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    margin: 16px 40px;
 }
 
 .container {
-    width: 50%;
+    width: 100%;
+    margin: 16px 40px;
 }
