@@ -33,34 +33,34 @@ const Actor = () => {
     },[])
 
     return (
-        <article>
+        <section>
             <h2 className="titulo__elenco">Elenco</h2>
             <ul className="cast_list">    
                 {credit && credit.map((credits) => {
                     if(credits.profile_path != null) {
                         return (
-                        <li className="list_actors">
+                        <li key={credits.profile_path} className="list_actors">
                             <img src={imagemUrl + tamanhoPoster + credits.profile_path} alt={credits.name} className="poster__actor" />
-                            <div className="actors_name">
+                            <article className="actors_name">
                                 <p className="name">{credits.name}</p>
                                 <p className="name">{credits.character}</p>
-                            </div>
+                            </article>
                         </li>
                         )
                     } else {
                         return (
-                        <li className="list_actors">
+                        <li key={credits.profile_path} className="list_actors">
                             <img src="../img/no_image.jpg" alt={credits.name} className="poster__actor"/>
-                            <div className="actors_name">
+                            <article className="actors_name">
                                 <p className="name">{credits.name}</p>
                                 <p className="name">{credits.character}</p>
-                            </div>
+                            </article>
                         </li>
                         )
                     }
                 })}
             </ul>
-        </article>
+        </section>
     )
 }
 

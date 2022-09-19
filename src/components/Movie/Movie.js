@@ -32,7 +32,7 @@ const Movie = () => {
 
     return(
         <div>
-            {!movie && <p><Spinner /></p>}
+            {!movie && <Spinner />}
             {movie && <Navigation movie={movie}/>}
             {movie && <><MovieInfo movie={movie} /></>}
             {movie && <Actor />}

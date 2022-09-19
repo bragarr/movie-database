@@ -33,22 +33,22 @@ const Search = () => {
     }, [query])
 
     return (
-        <div>
+        <section>
             <article>
                 <SearchBar />
             </article>
-            <div>
+            <article>
                 <h2 className="titulo__busca">Resultados:
-                <span className="seacrh__text">
-                    {query}
-                </span>
+                    <span className="seacrh__text">
+                        {query}
+                    </span>
                 </h2>
-            </div>
-            <div className="container__movie">
-                {movies.length === 0 && <p><Spinner /></p>}
+                {movies.length === 0 && <Spinner />}
+            </article>
+            <article className="container__movie">
                 {movies.length > 0 && movies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
-            </div> 
-        </div>
+            </article> 
+        </section>
     )
 };
 

@@ -7,17 +7,31 @@
     padding: 50px 100px;
     color: white;
     display: flex;
-    position: absolute;
     background-color: rgba(0, 0, 0, 0.26); 
 }
 
 .bloco__movie {
     display: flex;
-    margin: 16px 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: 100%;
-    margin: 16px 40px;
+    margin: 0;
+    padding: 0 50px;
     font-size: 20px;
+    background-color: #00000070;
+}
+
+.genres_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.genres {
+    padding-right: 10px;
 }
