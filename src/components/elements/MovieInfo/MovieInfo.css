@@ -7,39 +7,17 @@
     padding: 50px 100px;
     color: white;
     display: flex;
-    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.26); 
 }
 
 .bloco__movie {
-    padding: 0;
-    margin: 0;
-    width: 400px;
-    height: 600px;
-}
-
-.movie__poster {
-    width: 400px;
-    height: 600px;
+    display: flex;
+    margin: 16px 40px;
 }
 
 .container {
-    background-color: #00000093;
-    padding: 0 30px;
-    width: 90%;
-    height: 600px;
-}
-
-.titulo__filme {
-    font-size: 40px;
-}
-
-.genres {
-    list-style-type:none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.list_genres {
-    padding-right: 20px;
+    width: 100%;
+    margin: 16px 40px;
+    font-size: 20px;
 }
