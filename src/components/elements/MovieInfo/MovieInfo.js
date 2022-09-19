@@ -28,12 +28,14 @@ const MovieInfo = ({ movie }) => {
     100%), url('${imagemUrl}${background}${movie.backdrop_path}'), #1c1c1c`
     }}
     >
-      <figure className="bloco__movie">
-        <img
+      
+      <figure className="movie__filme">
+        <img className="movie"
           src={imagemUrl + tamanhoPoster + movie.poster_path}
           alt={movie.title}
         />
-      </figure>
+        </figure>
+
       <article className="container">
         <h2>{movie.title}</h2>
         <h3>Título Original {movie.original_title}</h3>
