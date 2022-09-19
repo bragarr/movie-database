@@ -19,6 +19,7 @@ const idimodaUrl = API_LANG;
 const Search = () => {
     const [searchParams] = useSearchParams();
     const [movies, setMovies] = useState([]);
+    
     const query = searchParams.get("q");
 
     const getMovies = async (url) => {

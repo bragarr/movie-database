@@ -39,7 +39,7 @@ const Actor = () => {
                 {credit && credit.map((credits) => {
                     if(credits.profile_path != null) {
                         return (
-                        <li key={credits.profile_path} className="list_actors">
+                        <li key={Math.random()*500} className="list_actors">
                             <img src={imagemUrl + tamanhoPoster + credits.profile_path} alt={credits.name} className="poster__actor" />
                             <article className="actors_name">
                                 <p className="name">{credits.name}</p>
@@ -49,7 +49,7 @@ const Actor = () => {
                         )
                     } else {
                         return (
-                        <li key={credits.profile_path} className="list_actors">
+                        <li key={Math.random()*500} className="list_actors">
                             <img src="../img/no_image.jpg" alt={credits.name} className="poster__actor"/>
                             <article className="actors_name">
                                 <p className="name">{credits.name}</p>

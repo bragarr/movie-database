@@ -3,27 +3,49 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
     margin-top: 0;
     margin-bottom: 80px;
-    background-color: black;
 
 }
 
 .numero__paginas {
-    margin: 0 20px;
-    padding: 20px 50px;
+    margin: 0 10px;
 }
 
-.button_pagina {
+.button__pagina {
     font-size: 20px;
+    font-weight: 700;
     cursor: pointer;
     background-color: yellowgreen;
-    color: white;
     border: none;
-    border-radius: 10px;
+    padding: 5px 20px;
 }
 
-.button_pagina:active {
-    background-color: #648522;
+.button__pagina--ativo {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(122, 163, 41);
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 720px) {
+
+    .numero__paginas {
+        margin: 0 5px;
+    }
+
+    .button__pagina {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .button__pagina--ativo {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+
 }

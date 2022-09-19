@@ -15,7 +15,8 @@ const NavPage = ({limit, total, offset, setOffset}) => {
            {Array.from({length: maxItens}).map((_,index) => index + firstPage)
            .map((page) => (
                 <li key={page} className="numero__paginas">
-                    <button onClick={() => setOffset((page - 1) * limit)} className="button_pagina">
+                    <button onClick={() => setOffset((page - 1) * limit)} 
+                    className={page === currentPage ? 'button__pagina--ativo' : 'button__pagina'}>
                         {page}
                     </button>
                 </li>
