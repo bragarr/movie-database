@@ -55,6 +55,12 @@ const Home = () => {
                 <HeroImage />
             </article>
             <h3 className="titulo__section">Filmes Populares</h3>
+            <NavPage 
+                limit={topMovies.length} 
+                total={dados} 
+                offset={offset}
+                setOffset={setOffset}
+            />
             <section className="container__movie">
                 {topMovies.length > 0 && topMovies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
             </section>

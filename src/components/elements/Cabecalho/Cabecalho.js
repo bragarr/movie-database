@@ -13,7 +13,7 @@ function Cabecalho() {
         <nav className="menu">
                 <ul className="list__nav">
                     <li>
-                        <a href="/home" className="menu__movies">Meus Favoritos</a>
+                        <a href="/home" className="menu__movies">Movies</a>
                     </li>
                     <li>
                         <img className="menu__github" src="/img/github.png" alt="logo GitHub" />
