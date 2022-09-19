@@ -1,0 +1,28 @@
+.paginas {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 80px;
+    background-color: black;
+
+}
+
+.numero__paginas {
+    margin: 0 20px;
+    padding: 20px 50px;
+}
+
+.button_pagina {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.button_pagina:active {
+    background-color: #648522;
+}
