@@ -1,51 +1,43 @@
 .titulo__elenco {
     font-size: 40px;
     margin: 0;
-    padding: 20px 60px;
+    display: flex;
     text-transform: uppercase;
     background-color: black;
     color: white;
 }
 
 .cast_list {
+    width: 100%;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .list_actors {
     margin: 0;
     padding: 0;
     display: flex;
+    margin: 10px;
     flex-direction: row;
-    margin: 20px 20px;
     background-color: black;
     color: white;
+    width: auto;
 }
 
 .poster__actor {
-    width: 154px;
-    height: 220px;
+    width: 50%;
+    height: 100%;
 }
 
 .actors_name {
-    padding: 0 20px;
+    padding: 0 px;
     font-size: 20px;
+    width: 100%;
     text-transform: uppercase;
 }
 
 .name {
-    word-break: normal;
-}
-
-@media screen and (max-width:1800px) {
-    .cast_list {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media screen and (max-width:1020px) {
-    .cast_list {
-        grid-template-columns: 1fr 1fr;
-    }
+    
 }

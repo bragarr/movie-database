@@ -8,27 +8,15 @@
     background-color: rgba(0, 0, 0, 0.26); 
 }
 
-.bloco__movie {
+.movie__filme {
     display: flex;
-    width: 100%;
-    margin: 20px;
-}
-
-.bloco__movie figure {
-    width: 100%;
-    display: flex;
-    text-align: center;
     margin: 0px;
-}
-
-@media screen and (min-width: 0px) {
-    .bloco__movie  {
-        max-width: 940px;
-        display: flex;
-    }
+    height: 500px;
+    margin: 23px;
 }
 
 .movie {
     display: flex;
     width: 345px;
 }
+

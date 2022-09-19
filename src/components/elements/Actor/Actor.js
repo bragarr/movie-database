@@ -33,7 +33,7 @@ const Actor = () => {
     },[])
 
     return (
-        <section>
+        <section className="titulo">
             <h2 className="titulo__elenco">Elenco</h2>
             <ul className="cast_list">    
                 {credit && credit.map((credits) => {
