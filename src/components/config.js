@@ -23,6 +23,10 @@ const BACKDROPE_SIZE = "w1280";
 
 const POSTER_SIZE = "w300/";
 
+const POSTER_MOVIE = "w500/";
+
+const PROFILE_ACTOR = "w154/"
+
 
 export {
     API_SEARCH,
@@ -31,5 +35,7 @@ export {
     API_LANG,
     IMAGEM_URL,
     BACKDROPE_SIZE,
-    POSTER_SIZE
+    POSTER_SIZE,
+    POSTER_MOVIE,
+    PROFILE_ACTOR
 }

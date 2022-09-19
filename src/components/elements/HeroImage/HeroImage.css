@@ -37,7 +37,7 @@
 .hero__titulo {
     color: white;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -45,6 +45,7 @@
     margin: 0;
     padding: 40px 0;
     color: white;
+    font-size: 20px;
 }
 
 @media screen and (max-width:1020px) {
@@ -52,8 +53,13 @@
         height: 500px;
     }
 
+    .hero__titulo {
+        font-size: 45px;
+    } 
+
     .hero__description {
         padding: 35px 0;
+        font-size: 16px;
     }
     
 }

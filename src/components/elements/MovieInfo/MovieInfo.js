@@ -5,7 +5,8 @@ import "../FourColGrid/FourColGrid.css";
 import { IMAGEM_URL, POSTER_SIZE } from "../../config";
 
 const imagemUrl = IMAGEM_URL;
-const tamanhoPoster = POSTER_SIZE;
+const tamanhoPoster = POSTER_MOVIE;
+const background = BACKDROPE_SIZE;
 
 const MovieInfo = ({ movie }) => {
   let tamanhoGenres = movie.genres.length;

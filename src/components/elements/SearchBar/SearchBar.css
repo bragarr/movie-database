@@ -37,6 +37,7 @@
     margin-left: 5px;
     background: greenyellow;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
 .lupa {

@@ -16,7 +16,7 @@ import {
 const movieURL = API_DB;
 const apiKey = API_KEY;
 const idiomaApi = API_LANG;
-let aleatorio = 10;
+let aleatorio = 2;
 
 const Home = () => {
 
@@ -40,10 +40,10 @@ const Home = () => {
     return (
         <div>
             <article>
-                <HeroImage />
+                <SearchBar />
             </article>
             <article>
-                <SearchBar />
+                <HeroImage />
             </article>
             <h3 className="titulo__section">Filmes Populares</h3>
             <section className="container__movie">

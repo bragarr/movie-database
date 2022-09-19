@@ -1,4 +1,11 @@
 .container__movieInfo {
+    background-size: 100%, cover !important;
+    width: auto;
+    height: 600px;
+    position: relative;
+    animation: animateHeroimage 5s;
+    padding: 50px 100px;
+    color: white;
     display: flex;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.26); 
