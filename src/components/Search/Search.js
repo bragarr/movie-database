@@ -24,15 +24,12 @@ const Search = () => {
     const getMovies = async (url) => {
         const res = await fetch(url);
         const data = await res.json();
-
         setMovies(data.results);
-        console.log(data);
     };
 
     useEffect(() => {
         const moviesSearchUrl = `${apiSearch}?${apiKey}&query=${query}${idimodaUrl}`;
         getMovies(moviesSearchUrl);
-        console.log(moviesSearchUrl)
     }, [query])
 
     return (

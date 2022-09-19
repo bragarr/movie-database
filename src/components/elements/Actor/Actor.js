@@ -18,24 +18,18 @@ const imagemUrl = IMAGEM_URL;
 const tamanhoPoster = PROFILE_ACTOR;
 
 const Actor = () => {
-
     const {id} = useParams();
     const [credit, setCredits] = useState(null);
-
 
     const getCredit = async (url) => {
         const res = await fetch(url);
         const data = await res.json();
-
         setCredits(data.cast);
-        console.log(data)
-
     };
 
     useEffect(() => {
         const creditUrl = `${apiUrl}${id}/credits?${apiKey}${idiomaApi}`;
         getCredit(creditUrl);
-        console.log(creditUrl)
     },[])
 
     return (

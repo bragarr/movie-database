@@ -16,7 +16,8 @@ import {
 const movieURL = API_DB;
 const apiKey = API_KEY;
 const idiomaApi = API_LANG;
-let aleatorio = 2;
+let aleatorio = 1;
+let counter = 1;
 
 const Home = () => {
 
@@ -25,16 +26,11 @@ const Home = () => {
     const getTopRatedMovies = async (url) => {
         const res = await fetch(url);
         const data = await res.json();
-
         setTopMovies(data.results);
-        console.log(data);
     };
-    
-
     useEffect(() => {
         const topRatedUrl = `${movieURL}popular?${apiKey}${idiomaApi}&page=${aleatorio}`;
         getTopRatedMovies(topRatedUrl);
-       
     },[])
 
     return (
@@ -49,7 +45,7 @@ const Home = () => {
             <section className="container__movie">
                 {topMovies.length > 0 && topMovies.map((movie) => <FourColGrid key={movie.id} movie={movie} /> )}
             </section>
-            <LoadMoreBtn />
+            <LoadMoreBtn/>
         </div>
     )
 };
