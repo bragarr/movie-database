@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
 import SearchBar from "../elements/SearchBar/SearchBar";
 import HeroImage from "../elements/HeroImage/HeroImage";
-import LoadMoreBtn from "../elements/LoadMoreBtn/LoadMoreBtn";
 import NavPage from "../elements/NavPage/NavPage";
 
 import "./Home.css"; 

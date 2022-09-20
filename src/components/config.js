@@ -1,5 +1,3 @@
-import React from "react";
-
 // Configuração para Key API
 //Consumo de API para Banco de dados de filmes e atores
 const API_SEARCH = "https://api.themoviedb.org/3/search/movie/";

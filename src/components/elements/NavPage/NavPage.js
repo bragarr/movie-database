@@ -13,7 +13,7 @@ const NavPage = ({limit, total, offset, setOffset}) => {
 
     return (
         <ul className="paginas">
-           {Array.from({length: maxItens}).map((_,index) => index + firstPage)
+           {Array.from({length: Math.min(maxItens, pages)}).map((_,index) => index + firstPage)
            .map((page) => (
                 <li key={page} className="numero__paginas">
                     <button onClick={() => setOffset((page - 1) * limit)} 
