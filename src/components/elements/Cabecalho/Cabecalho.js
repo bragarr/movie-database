@@ -7,7 +7,7 @@ function Cabecalho() {
         <header className="cabecalho">
 
         <Link to={"/"}>
-            <img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo_site" />
+            <img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo" />
         </Link>
         
         

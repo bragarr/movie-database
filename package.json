@@ -1,18 +1,17 @@
 {
   "name": "react-movie",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "react-movie/",
+  "private": true,
+  "homepage": "https://bragarr.github.io/react-movie/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^4.0.0",
-    "node-pre-gyp": "^0.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^2.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
