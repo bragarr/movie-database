@@ -2,7 +2,7 @@
   "name": "react-movie",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bragarr.github.io/react-movie/",
+  "homepage": "react-movie/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
