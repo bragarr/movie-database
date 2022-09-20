@@ -1,0 +1,63 @@
+/*Cabeçalho*/
+
+.cabecalho__imagem {
+    width: 250px;
+    display: inline-block;
+    justify-content: left;
+    user-select: none;
+}
+
+.cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    align-items: center; 
+    padding: 15px;
+}
+
+.menu__botao {    
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: greenyellow;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none    
+}
+
+.menu__github {
+    width: 50%;
+}
+
+.menu__movies {
+    color: white;
+    padding-right: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__movies:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    .list__nav {
+        padding: 0;
+    }
+}
+
+
