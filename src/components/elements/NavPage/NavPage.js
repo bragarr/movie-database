@@ -1,3 +1,4 @@
+import React from "react";
 import "./NavPage.css"
 
 const maxItens = 9;

@@ -1,3 +1,4 @@
+import React from "react";
 import "./MovieInfo.css";
 import "../FourColGrid/FourColGrid.css";
 
