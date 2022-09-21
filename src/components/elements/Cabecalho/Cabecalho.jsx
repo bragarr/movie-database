@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import './Cabecalho.css'
 
 import logo from '../../../../img/reactMovie_logo.png'
+import gitHub from '../../../../img/github.png'
+
 
 function Cabecalho() {
     return (
