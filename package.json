@@ -1,7 +1,7 @@
 {
-  "name": "movie-react-deploy",
+  "name": "react-movie",
   "private": true,
-  "homepage": "movie-react-deploy/",
+  "homepage": "react-movie/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
