@@ -15,7 +15,7 @@ const IMAGEM_URL = "https://image.tmdb.org/t/p/";
 
 //para poster principal
 
-const BACKDROPE_SIZE = "w1280";
+const BACKDROPE_SIZE = "w1280/";
 
 // Para postes menores
 

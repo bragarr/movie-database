@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import FourColGrid from "../elements/FourColGrid/FourColGrid";
 import SearchBar from "../elements/SearchBar/SearchBar";
