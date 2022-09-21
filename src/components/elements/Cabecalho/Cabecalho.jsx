@@ -6,7 +6,7 @@ function Cabecalho() {
         <header className="cabecalho">
 
         <Link to={"/"}>
-            <img className="cabecalho__imagem" src="../img/reactMovie_logo.png" alt="logo" />
+            <img className="cabecalho__imagem" src="./img/reactMovie_logo.png" alt="logo" />
         </Link>
         
         
@@ -16,7 +16,7 @@ function Cabecalho() {
                         <a href="/home" className="menu__movies">Movies</a>
                     </li>
                     <li>
-                        <img className="menu__github" src="../img/github.png" alt="logo GitHub" />
+                        <img className="menu__github" src="./img/github.png" alt="logo GitHub" />
                     </li>
                     <li>
                         <button className="menu__botao" type="submit">login</button>
