@@ -20,7 +20,7 @@ function Cabecalho() {
                         <a href="/home" className="menu__movies">Movies</a>
                     </li>
                     <li>
-                        <img className="menu__github" src="/img/github.png" alt="logo GitHub" />
+                        <img className="menu__github" src={gitHub} alt="logo GitHub" />
                     </li>
                     <li>
                         <button className="menu__botao" type="submit">login</button>
