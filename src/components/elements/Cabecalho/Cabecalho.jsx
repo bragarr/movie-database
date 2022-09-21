@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Cabecalho.css'
 
-import {logo} from '../../../../img/reactMovie_logo.png'
+import logo from '../../../../img/reactMovie_logo.png'
 
 function Cabecalho() {
     return (
