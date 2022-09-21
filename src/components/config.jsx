@@ -1,7 +1,7 @@
 // Configuração para Key API
 //Consumo de API para Banco de dados de filmes e atores
-const API_SEARCH = "http://api.themoviedb.org/3/search/movie/";
-const API_DB = "http://api.themoviedb.org/3/movie/";
+const API_SEARCH = "https://api.themoviedb.org/3/search/movie/";
+const API_DB = "https://api.themoviedb.org/3/movie/";
 const API_KEY = "api_key=569ff9eec8d764584edc5a6ab4f72371";
 const API_LANG = "&language=pt-BR";
 
