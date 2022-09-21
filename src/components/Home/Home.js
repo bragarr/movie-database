@@ -38,6 +38,7 @@ const Home = () => {
         const res = await fetch(url);
         const data = await res.json();
         setDados(data.total_results);
+        console.log(data);
     };
 
     useEffect(() => {
