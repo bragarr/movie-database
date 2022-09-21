@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom'
 import './Cabecalho.css'
 
+import {logo} from '../../../../img/reactMovie_logo'
+
 function Cabecalho() {
     return (
         <header className="cabecalho">
 
         <Link to={"/"}>
-            <img className="cabecalho__imagem" src="/img/reactMovie_logo.png" alt="logo" />
+            <img className="cabecalho__imagem" src={logo} alt="logo" />
         </Link>
         
         
