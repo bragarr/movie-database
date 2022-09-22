@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import {useEffect, useState} from "react";
 
+import noimage from '../../../../img/no_image.jpg'
+
 import {
     API_KEY,
     API_LANG,
@@ -50,7 +52,7 @@ const Actor = () => {
                     } else {
                         return (
                         <li key={Math.random()*500} className="list_actors">
-                            <img src="../img/no_image.jpg" alt={credits.name} className="poster__actor"/>
+                            <img src={noimage} alt={credits.name} className="poster__actor"/>
                             <article className="actors_name">
                                 <p className="name">{credits.name}</p>
                                 <p className="name">{credits.character}</p>
