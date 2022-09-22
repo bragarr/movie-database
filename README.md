@@ -6,6 +6,8 @@ Você pode consultar o projeto através do link abaixo:
 
 https://react-movie-webpage-6hdqld39s-bragarr.vercel.app
 
+https://user-images.githubusercontent.com/108424896/191630902-1fea94f5-35b7-48c6-92d0-1243f178cd66.mp4
+
 Este projeto é um colab com o Dev Filipe Dias
 
 Challanges e Objetivos do Projeto
