@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import MovieInfo from "../elements/MovieInfo/MovieInfo"
-import Navigation from "../elements/Navigation/Navigation";
-import Actor from "../elements/Actor/Actor";
-import Spinner from "../elements/Spinner/Spinner";
+import MovieInfo from "../../components/MovieInfo/MovieInfo"
+import Navigation from "../../components/Navigation/Navigation";
+import Actor from "../../components/Actor/Actor";
+import Spinner from "../../components/Spinner/Spinner";
 
 import {
     API_DB,
     API_KEY,
     API_LANG,
-} from "../config";
+} from "../../components/config";
 
 const apiUrl = API_DB;
 const apiKey = API_KEY;

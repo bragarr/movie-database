@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import './Cabecalho.css'
+import { Link } from 'react-router-dom';
+import './Cabecalho.css';
 
-import logo from '../../../../img/reactMovie_logo.png'
-import github from '../../../../img/github.png'
+import logo from '../../assets/img/reactMovie_logo.png';
+import github from '../../assets/img/github.png';
 
 
 function Cabecalho() {

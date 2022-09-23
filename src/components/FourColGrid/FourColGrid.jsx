@@ -5,7 +5,7 @@ import "./FourColGrid.css"
 import {
     IMAGEM_URL,
     POSTER_SIZE,
-} from "../../config";
+} from "../config";
 
 const imagemUrl = IMAGEM_URL;
 const tamanhoPoster = POSTER_SIZE;

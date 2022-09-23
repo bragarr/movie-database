@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import {useEffect, useState} from "react";
 
-import noimage from '../../../../img/no_image.jpg'
+import noimage from '../../assets/img/no_image.jpg';
 
 import {
     API_KEY,
@@ -9,7 +9,7 @@ import {
     API_DB,
     IMAGEM_URL,
     PROFILE_ACTOR
-} from "../../config";
+} from "../config";
 
 import "./Actor.css"; 
 

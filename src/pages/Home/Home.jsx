@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import FourColGrid from "../elements/FourColGrid/FourColGrid";
-import SearchBar from "../elements/SearchBar/SearchBar";
-import HeroImage from "../elements/HeroImage/HeroImage";
-import NavPage from "../elements/NavPage/NavPage";
+import FourColGrid from "../../components/FourColGrid/FourColGrid";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import HeroImage from "../../components/HeroImage/HeroImage";
+import NavPage from "../../components/NavPage/NavPage";
 
 import "./Home.css"; 
 
@@ -10,7 +10,7 @@ import {
     API_KEY,
     API_LANG,
     API_DB,
-} from "../config";
+} from "../../components/config";
 
 
 const movieURL = API_DB;

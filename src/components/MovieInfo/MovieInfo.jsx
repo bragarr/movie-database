@@ -6,7 +6,7 @@ import
     IMAGEM_URL,
     BACKDROPE_SIZE,
     POSTER_MOVIE 
-  } from "../../config";
+  } from "../config";
 
 const imagemUrl = IMAGEM_URL;
 const tamanhoPoster = POSTER_MOVIE;

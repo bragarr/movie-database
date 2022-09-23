@@ -1,15 +1,17 @@
 import {useEffect, useState} from "react";
 import { useSearchParams } from "react-router-dom";
-import FourColGrid from "../elements/FourColGrid/FourColGrid";
-import SearchBar from "../elements/SearchBar/SearchBar";
-import Spinner from "../elements/Spinner/Spinner";
-import "../Search/Search.css"
-import "../elements/FourColGrid/FourColGrid.css"
+import FourColGrid from "../../components/FourColGrid/FourColGrid";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import Spinner from "../../components/Spinner/Spinner";
+
+import "./Search.css";
+import "../../components/FourColGrid/FourColGrid.css";
+
 import {
     API_SEARCH,
     API_KEY,
     API_LANG
-} from "../config";
+} from "../../components/config";
 
 
 const apiSearch = API_SEARCH;

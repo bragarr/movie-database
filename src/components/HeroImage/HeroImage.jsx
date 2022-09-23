@@ -7,7 +7,7 @@ import {
     API_LANG,
     IMAGEM_URL,
     BACKDROPE_SIZE,
-} from "../../config";
+} from "../config";
 
 const apiUrl = API_DB;
 const apiKey = API_KEY;
