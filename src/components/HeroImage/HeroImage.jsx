@@ -17,7 +17,7 @@ const tamanhoImagem = BACKDROPE_SIZE;
 let resultMovie = "";
 let filmeAleatorio = Math.floor(Math.random()*20);
 
-const HeroImage = () => {
+export function HeroImage() {
 
     const [,setLatestMovie] = useState([]);
     
@@ -57,4 +57,3 @@ const HeroImage = () => {
 
     )
 }
-export default HeroImage;

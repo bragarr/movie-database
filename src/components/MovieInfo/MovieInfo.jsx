@@ -12,7 +12,7 @@ const imagemUrl = IMAGEM_URL;
 const tamanhoPoster = POSTER_MOVIE;
 const background = BACKDROPE_SIZE;
 
-const MovieInfo = ({ movie }) => {
+export function MovieInfo({ movie }) {
   let tamanhoGenres = movie.genres.length;
   let arrayGeneros = [];
   for (let i = 0; i < tamanhoGenres; i++) {
@@ -55,5 +55,3 @@ const MovieInfo = ({ movie }) => {
     </section>
   );
 };
-
-export default MovieInfo;

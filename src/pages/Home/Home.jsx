@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import FourColGrid from "../../components/FourColGrid/FourColGrid";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import HeroImage from "../../components/HeroImage/HeroImage";
-import NavPage from "../../components/NavPage/NavPage";
+import { FourColGrid } from "../../components/FourColGrid/FourColGrid";
+import { SearchBar } from "../../components/SearchBar/SearchBar";
+import { HeroImage } from "../../components/HeroImage/HeroImage";
+import { NavPage } from "../../components/NavPage/NavPage";
 
 import "./Home.css"; 
 
@@ -17,7 +17,7 @@ const movieURL = API_DB;
 const apiKey = API_KEY;
 const idiomaApi = API_LANG;
 
-const Home = () => {
+export function Home() {
 
     const [topMovies, setTopMovies] = useState([]);
     const [dados, setDados] = useState([]);
@@ -67,5 +67,3 @@ const Home = () => {
         </div>
     )
 };
-
-export default Home;

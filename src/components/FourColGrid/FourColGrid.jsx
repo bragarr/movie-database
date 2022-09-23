@@ -10,7 +10,7 @@ import {
 const imagemUrl = IMAGEM_URL;
 const tamanhoPoster = POSTER_SIZE;
 
-const FourColGrid = ({movie, showlink = true}) => {
+export function FourColGrid({movie, showlink = true}) {
     return (
         <div > 
             {showlink && <Link to={`/movie/${movie.id}`}>
@@ -19,5 +19,3 @@ const FourColGrid = ({movie, showlink = true}) => {
         </div>
     );
 };
-
-export default FourColGrid

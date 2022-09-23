@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./Navigation.css"
 
-const Navigation = ({movie}) => {
+export function Navigation({movie}) {
     return (
         <div>
             <article className="barra__navigation">
@@ -14,5 +14,3 @@ const Navigation = ({movie}) => {
         </div>
     )
 }
-
-export default Navigation

@@ -1,9 +1,9 @@
 import './App.css'
 import { BrowserRouter,Outlet} from "react-router-dom";
-import Cabecalho from '../components/Cabecalho/Cabecalho';
+import { Cabecalho } from '../components/Cabecalho/Cabecalho';
 import MainRoutes from '../routes';
 
-const App = () => {
+export function App() {
   return (
       <BrowserRouter>
         <div className="App">
@@ -16,5 +16,3 @@ const App = () => {
       </BrowserRouter>
   );
 }
-
-export default App;

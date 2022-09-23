@@ -19,7 +19,7 @@ const idiomaApi = API_LANG;
 const imagemUrl = IMAGEM_URL;
 const tamanhoPoster = PROFILE_ACTOR;
 
-const Actor = () => {
+export function Actor() {
     const {id} = useParams();
     const [credit, setCredits] = useState(null);
 
@@ -65,5 +65,3 @@ const Actor = () => {
         </section>
     )
 }
-
-export default Actor

@@ -5,7 +5,7 @@ import logo from '../../assets/img/reactMovie_logo.png';
 import github from '../../assets/img/github.png';
 
 
-function Cabecalho() {
+export function Cabecalho() {
     return (
         <header className="cabecalho">
 
@@ -30,5 +30,3 @@ function Cabecalho() {
         </header >
     )
 }
-
-export default Cabecalho

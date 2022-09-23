@@ -1,9 +1,7 @@
 import "./Spinner.css"
 
-const Spinner = () => {
+export function Spinner() {
     return (
         <div className="carregando" />
     );
 }
-
-export default Spinner

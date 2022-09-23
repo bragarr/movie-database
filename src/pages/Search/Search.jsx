@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import { useSearchParams } from "react-router-dom";
-import FourColGrid from "../../components/FourColGrid/FourColGrid";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import Spinner from "../../components/Spinner/Spinner";
+import { FourColGrid } from "../../components/FourColGrid/FourColGrid";
+import { SearchBar } from "../../components/SearchBar/SearchBar";
+import { Spinner } from "../../components/Spinner/Spinner";
 
 import "./Search.css";
 import "../../components/FourColGrid/FourColGrid.css";
@@ -18,7 +18,7 @@ const apiSearch = API_SEARCH;
 const apiKey = API_KEY;
 const idimodaUrl = API_LANG;
 
-const Search = () => {
+export function Search() {
     const [searchParams] = useSearchParams();
     const [movies, setMovies] = useState([]);
     
@@ -54,5 +54,3 @@ const Search = () => {
         </section>
     )
 };
-
-export default Search;

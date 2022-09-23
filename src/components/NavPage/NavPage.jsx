@@ -3,7 +3,7 @@ import "./NavPage.css"
 const maxItens = 9;
 const maxLeft = (maxItens-1) / 2;
 
-const NavPage = ({limit, total, offset, setOffset}) => {
+export function NavPage({limit, total, offset, setOffset}) {
 
     const currentPage = offset ? (offset / limit) + 1 : 1;
     const pages = Math.ceil(total / limit);
@@ -25,5 +25,3 @@ const NavPage = ({limit, total, offset, setOffset}) => {
         </ul>
     );
 }
-
-export default NavPage;
