@@ -4,7 +4,7 @@ Este é um projeto para criação de uma aplicação web para consulta de filmes
 
 Você pode consultar o projeto através do link abaixo:
 
-https://react-movie-webpage-6hdqld39s-bragarr.vercel.app
+react-movie-webpage.vercel.app/
 
 Este projeto é um colab com o Dev Filipe Dias
 
