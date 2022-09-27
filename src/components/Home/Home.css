@@ -1,13 +1,20 @@
 .titulo__section {
-    margin: 20px 0 0 70px;
+    margin: 20px 0 10px 70px;
     font-size: 40px;
+}
+
+.texto__paginas {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
 }
 
 .container__movie {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 60px;
-    margin: 50px 60px;
+    margin: 50px 60px 0 60px;
     padding: 0;
 }
 

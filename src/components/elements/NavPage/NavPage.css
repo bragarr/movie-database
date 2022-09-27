@@ -1,0 +1,51 @@
+.paginas {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    margin-top: 0;
+    margin-bottom: 80px;
+
+}
+
+.numero__paginas {
+    margin: 0 10px;
+}
+
+.button__pagina {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: yellowgreen;
+    border: none;
+    padding: 5px 20px;
+}
+
+.button__pagina--ativo {
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(122, 163, 41);
+    border: 1px solid black;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 720px) {
+
+    .numero__paginas {
+        margin: 0 5px;
+    }
+
+    .button__pagina {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .button__pagina--ativo {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+
+}

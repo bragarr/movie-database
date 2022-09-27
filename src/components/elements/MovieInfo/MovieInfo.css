@@ -1,8 +1,10 @@
 .container__movieInfo {
     background-size: 100%, cover !important;
-    width: 100%;
+    width: auto;
     height: 600px;
+    position: relative;
     animation: animateHeroimage 5s;
+    padding: 50px 100px;
     color: white;
     display: flex;
     background-color: rgba(0, 0, 0, 0.26); 
@@ -10,13 +12,124 @@
 
 .movie__filme {
     display: flex;
-    margin: 0px;
-    height: 500px;
-    margin: 23px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0 50px;
+    font-size: 20px;
+    background-color: #00000070;
 }
 
 .movie {
     display: flex;
-    width: 345px;
+    width: 460px;
 }
 
+.genres_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.genres {
+    padding-right: 10px;
+}
+
+@media screen and (max-width:1220px) {
+    
+    .container__movieInfo {
+        height: 500px;
+    }
+
+    .movie {
+        width: 350px;
+        height: 530px;
+    }
+
+    .container {
+        font-size: 16px;
+        height: 530px;
+    }
+    
+}
+
+@media screen and (max-width:960px) {
+    
+    .container {
+        font-size: 12px;
+        height: 450px;
+    }
+    .movie {
+        width: 300px;
+        height: 450px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .container__movieInfo {
+        display: flex;
+        height: 280px;
+        padding: 30px 60px;
+    }
+    
+    .container {
+        font-size: 10px;
+        height: 300px;
+        padding: 0 25px;
+    }
+    .movie {
+        width: 190px;
+        height: 300px;
+    }
+    
+}
+
+
+@media screen and (max-width:560px) {
+
+    .container__movieInfo {
+        display: flex;
+        height: 280px;
+        padding: 40px 50px;
+    }
+    
+    .container {
+        font-size: 9px;
+        height: 300px;
+        padding: 0 15px;
+    }
+    .movie {
+        width: 190px;
+        height: 300px;
+    }
+    
+}
+
+
+@media screen and (max-width:480px) {
+
+    .container__movieInfo {
+        display: flex;
+        height: 200px;
+        padding: 10px 20px 0 20px;
+    }
+    
+    .container {
+        font-size: 7px;
+        height: 180px;
+        padding: 0 15px;
+    }
+    .movie {
+        width: 130px;
+        height: 180px;
+    }
+    
+}
