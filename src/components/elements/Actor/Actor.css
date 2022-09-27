@@ -8,11 +8,9 @@
 }
 
 .cast_list {
-    width: 100%;
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .list_actors {
@@ -27,8 +25,8 @@
 }
 
 .poster__actor {
-    width: 50%;
-    height: 100%;
+    width: 154px;
+    height: 220px;
 }
 
 .actors_name {
@@ -38,6 +36,15 @@
     text-transform: uppercase;
 }
 
-.name {
-    
+@media screen and (max-width:1800px) {
+    .cast_list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .cast_list {
+        grid-template-columns: 1fr 1fr;
+        
+    }
 }
