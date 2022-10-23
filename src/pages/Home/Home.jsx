@@ -6,16 +6,9 @@ import { NavPage } from "../../components/NavPage/NavPage";
 
 import "./Home.css"; 
 
-import {
-    API_KEY,
-    API_LANG,
-    API_DB,
-} from "../../components/config";
-
-
-const movieURL = API_DB;
-const apiKey = API_KEY;
-const idiomaApi = API_LANG;
+const movieURL = import.meta.env.VITE_API_DB;
+const apiKey = import.meta.env.VITE_API_KEY;
+const idiomaApi = import.meta.env.VITE_API_LANG;
 
 export function Home() {
 

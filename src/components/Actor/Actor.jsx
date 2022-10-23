@@ -3,21 +3,13 @@ import {useEffect, useState} from "react";
 
 import noimage from '../../assets/img/no_image.jpg';
 
-import {
-    API_KEY,
-    API_LANG,
-    API_DB,
-    IMAGEM_URL,
-    PROFILE_ACTOR
-} from "../config";
-
 import "./Actor.css"; 
 
-const apiUrl = API_DB;
-const apiKey = API_KEY;
-const idiomaApi = API_LANG;
-const imagemUrl = IMAGEM_URL;
-const tamanhoPoster = PROFILE_ACTOR;
+const apiUrl = import.meta.env.VITE_API_DB;
+const apiKey = import.meta.env.VITE_API_KEY;
+const idiomaApi = import.meta.env.VITE_API_LANG;
+const imagemUrl = import.meta.env.VITE_IMAGEM_URL;
+const tamanhoPoster = import.meta.env.VITE_PROFILE_ACTOR;
 
 export function Actor() {
     const {id} = useParams();

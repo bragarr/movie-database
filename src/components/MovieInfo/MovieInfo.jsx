@@ -1,16 +1,9 @@
 import "./MovieInfo.css";
 import "../FourColGrid/FourColGrid.css";
 
-import 
-  { 
-    IMAGEM_URL,
-    BACKDROPE_SIZE,
-    POSTER_MOVIE 
-  } from "../config";
-
-const imagemUrl = IMAGEM_URL;
-const tamanhoPoster = POSTER_MOVIE;
-const background = BACKDROPE_SIZE;
+const imagemUrl = import.meta.env.VITE_IMAGEM_URL;
+const tamanhoPoster = import.meta.env.VITE_POSTER_MOVIE;
+const background = import.meta.env.VITE_BACKDROPE_SIZE;
 
 export function MovieInfo({ movie }) {
   let tamanhoGenres = movie.genres.length;

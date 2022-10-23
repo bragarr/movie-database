@@ -1,19 +1,11 @@
 import { useEffect, useState } from "react";
-import './HeroImage.css'
+import './HeroImage.css';
 
-import {
-    API_DB,
-    API_KEY,
-    API_LANG,
-    IMAGEM_URL,
-    BACKDROPE_SIZE,
-} from "../config";
-
-const apiUrl = API_DB;
-const apiKey = API_KEY;
-const idiomaApi = API_LANG;
-const imagemUrl = IMAGEM_URL;
-const tamanhoImagem = BACKDROPE_SIZE;
+const apiUrl = import.meta.env.VITE_API_DB;
+const apiKey = import.meta.env.VITE_API_KEY;
+const idiomaApi = import.meta.env.VITE_API_LANG;
+const imagemUrl = import.meta.env.VITE_IMAGEM_URL;
+const tamanhoImagem = import.meta.env.VITE_BACKDROPE_SIZE;
 let resultMovie = "";
 let filmeAleatorio = Math.floor(Math.random()*20);
 

@@ -5,15 +5,9 @@ import { Navigation } from "../../components/Navigation/Navigation";
 import { Actor } from "../../components/Actor/Actor"
 import { Spinner } from "../../components/Spinner/Spinner";
 
-import {
-    API_DB,
-    API_KEY,
-    API_LANG,
-} from "../../components/config";
-
-const apiUrl = API_DB;
-const apiKey = API_KEY;
-const idiomaApi = API_LANG;
+const apiUrl = import.meta.env.VITE_API_DB;
+const apiKey = import.meta.env.VITE_API_KEY;
+const idiomaApi = import.meta.env.VITE_API_LANG;
 
 export function Movie() {
     const {id} = useParams();

@@ -2,13 +2,8 @@ import { Link } from "react-router-dom";
 
 import "./FourColGrid.css"
 
-import {
-    IMAGEM_URL,
-    POSTER_SIZE,
-} from "../config";
-
-const imagemUrl = IMAGEM_URL;
-const tamanhoPoster = POSTER_SIZE;
+const imagemUrl = import.meta.env.VITE_IMAGEM_URL;
+const tamanhoPoster = import.meta.env.VITE_POSTER_SIZE;
 
 export function FourColGrid({movie, showlink = true}) {
     return (

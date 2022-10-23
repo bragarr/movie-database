@@ -7,16 +7,9 @@ import { Spinner } from "../../components/Spinner/Spinner";
 import "./Search.css";
 import "../../components/FourColGrid/FourColGrid.css";
 
-import {
-    API_SEARCH,
-    API_KEY,
-    API_LANG
-} from "../../components/config";
-
-
-const apiSearch = API_SEARCH;
-const apiKey = API_KEY;
-const idimodaUrl = API_LANG;
+const apiSearch = import.meta.env.VITE_API_SEARCH;
+const apiKey = import.meta.env.VITE_API_KEY;
+const idimodaUrl = import.meta.env.VITE_API_LANG;
 
 export function Search() {
     const [searchParams] = useSearchParams();
