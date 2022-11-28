@@ -4,6 +4,7 @@
     width: 250px;
     display: inline-block;
     justify-content: left;
+    -webkit-user-select: none;
     user-select: none;
 }
 
