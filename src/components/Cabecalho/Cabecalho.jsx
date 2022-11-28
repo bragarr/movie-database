@@ -22,9 +22,9 @@ export function Cabecalho() {
                     <li>
                         <img className="menu__github" src={github} alt="logo GitHub" />
                     </li>
-                    <li>
-                        <button className="menu__botao" type="submit">login</button>
-                    </li>
+                    <Link to={"login"}>
+                        <button className="menu__botao" type="button">login</button>
+                    </Link>
                 </ul>
             </nav>
         </header >
