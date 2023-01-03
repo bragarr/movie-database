@@ -1,11 +1,11 @@
 import './App.css'
-import { BrowserRouter,Outlet} from "react-router-dom";
+import { BrowserRouter, Outlet, MemoryRouter } from "react-router-dom";
 import { Cabecalho } from '../components/Cabecalho/Cabecalho';
 import MainRoutes from '../routes';
 
 export function App() {
   return (
-      <BrowserRouter>
+      <MemoryRouter>
         <div className="App">
           <header>
             <Cabecalho />
@@ -13,6 +13,6 @@ export function App() {
           <Outlet /> 
           <MainRoutes />
         </div>
-      </BrowserRouter>
+      </MemoryRouter>
   );
 }
