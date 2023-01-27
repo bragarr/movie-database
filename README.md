@@ -1,6 +1,6 @@
 Project-Movie
 
-Este é um projeto para criação de uma aplicação web para consulta de filmes usando React.js
+Este é um projeto para criação de uma aplicação web para consulta de filmes usando React
 
 Você pode consultar o projeto através do link abaixo:
 
