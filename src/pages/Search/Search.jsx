@@ -24,7 +24,7 @@ export function Search() {
     };
 
     useEffect(() => {
-        const moviesSearchUrl = `${apiSearch}?${apiKey}&query=${query}${idimodaUrl}`;
+        const moviesSearchUrl = `${apiSearch}?${apiKey}&${idimodaUrl}&query=${query}&page=1&include_adult=false`;
         getMovies(moviesSearchUrl);
     }, [query])
 

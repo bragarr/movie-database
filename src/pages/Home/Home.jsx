@@ -22,7 +22,7 @@ export function Home() {
         setTopMovies(data.results);
     };
     useEffect(() => {
-        const topRatedUrl = `${movieURL}popular?${apiKey}${idiomaApi}&page=${offset +1}`;
+        const topRatedUrl = `${movieURL}popular?${apiKey}${idiomaApi}&page=${offset + 1}`;
         getTopRatedMovies(topRatedUrl);
     },[offset])
 
@@ -30,7 +30,6 @@ export function Home() {
         const res = await fetch(url);
         const data = await res.json();
         setDados(data.total_results);
-        console.log(data);
     };
 
     useEffect(() => {

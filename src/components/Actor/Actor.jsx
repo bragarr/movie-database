@@ -30,10 +30,10 @@ export function Actor() {
         <section className="titulo">
             <h2 className="titulo__elenco">Elenco</h2>
             <ul className="cast_list">    
-                {credit && credit.map((credits) => {
+                {credit && credit.map((credits, id) => {
                     if(credits.profile_path != null) {
                         return (
-                        <li key={Math.random()*500} className="list_actors">
+                        <li key={id} className="list_actors">
                             <img src={imagemUrl + tamanhoPoster + credits.profile_path} alt={credits.name} className="poster__actor" />
                             <article className="actors_name">
                                 <p className="name">{credits.name}</p>
@@ -43,7 +43,7 @@ export function Actor() {
                         )
                     } else {
                         return (
-                        <li key={Math.random()*500} className="list_actors">
+                        <li key={id} className="list_actors">
                             <img src={noimage} alt={credits.name} className="poster__actor"/>
                             <article className="actors_name">
                                 <p className="name">{credits.name}</p>
