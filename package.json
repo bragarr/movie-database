@@ -2,7 +2,7 @@
   "name": "react-movie",
   "private": true,
   "homepage": "react-movie/",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,9 +13,13 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
+    "firebase": "^9.17.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0"
+    "react-firebase-hooks": "^5.1.1",
+    "react-router-dom": "^6.4.0",
+    "react-toastify": "^9.1.1",
+    "toastify": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
