@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { auth } from "../../contexts/fbconfig";
-import { useAuth } from "../../Hooks/useAuth";
+import { useAuth } from "../../hooks/useAuth";
 import { Link } from 'react-router-dom';
 import { useAuthState } from "react-firebase-hooks/auth";
 
