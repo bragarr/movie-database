@@ -20,10 +20,12 @@ export function Cabecalho() {
                         <a href="/home" className="menu__movies">Movies</a>
                     </li>
                     <li>
-                        <img className="menu__github" src={github} alt="logo GitHub" />
+                        <a href={import.meta.env.VITE_GITHUB} target="_blank" className="menu__movies">
+                            <img className="menu__github" src={github} alt="logo GitHub" />
+                        </a>
                     </li>
-                    <Link to={"login"}>
-                        <button className="menu__botao" type="button">login</button>
+                    <Link to={"signin"}>
+                        <button className="menu__botao" type="button">Sign In</button>
                     </Link>
                 </ul>
             </nav>

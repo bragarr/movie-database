@@ -2,7 +2,7 @@
   "name": "react-movie",
   "private": true,
   "homepage": "react-movie/",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,15 +10,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
+    "firebase": "^9.17.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0"
+    "react-firebase-hooks": "^5.1.1",
+    "react-router-dom": "^6.4.0",
+    "react-toastify": "^9.1.1",
+    "toastify": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.7.3",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.58.3",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
     "vite": "^3.1.0"
   }
 }

@@ -40,9 +40,7 @@ export function MovieInfo({ movie }) {
         <p>Receita: ${Number(movie.revenue)}</p>
         <p>Gênero:</p>
         <ul className="genres_list">
-          <li className="genres">{arrayGeneros[0]}</li>
-          <li className="genres">{arrayGeneros[1]}</li>
-          <li className="genres">{arrayGeneros[2]}</li>
+          {arrayGeneros && arrayGeneros.map((genero, id) => <li key={id}>{" | " + genero + " | "}</li>)}
         </ul>
       </article>
     </section>
